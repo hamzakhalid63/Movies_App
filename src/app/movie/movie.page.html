@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-toolbar>
+      <ion-title>Movie</ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="movies-list"></ion-back-button>
+    
+        </ion-buttons>
+        <ion-button slot ="end" (click)="delet()">
+            <ion-icon slot ="start" name ="close"></ion-icon>
+            Delete
+          </ion-button >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-card>
+        <img src="https://hdqwalls.com/download/avengers-end-game-4j-1080x1920.jpg" height="250px" />
+        <ion-card-header>
+          <ion-card-title>{{singleMovie?.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{singleMovie?.writer}}
+        </ion-card-content>
+    
+    
+      </ion-card>
+
+</ion-content>
+
